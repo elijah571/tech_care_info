@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 body {
+    background-color:#F6F7F8;
     font-family: 'Poppins', sans-serif;
     background-color: #eee;
     margin: 0;
@@ -63,7 +66,7 @@ header {
 }
 /*svg*/
 .menu{
-    display: none;
+    display:none;
 }
 svg{
     width: 30px;
@@ -112,6 +115,7 @@ svg{
     }
 }
 @media (max-width: 768px) {
+    /* header*/
     .navbar {
         /* width: 280px; */
         height: 340px;
@@ -178,4 +182,401 @@ svg{
     }
     
     
+}
+
+.filter{
+    display: none;
+}
+/* container */
+.container{
+    display: grid;
+    grid-template-columns: 240px 1fr 250px;
+    gap: 15px;
+    margin: 4px 10px;
+}
+.sidebar{
+    background-color: white;
+    border-radius: 12px;
+    padding:15px 10px;
+    margin-left: 10px;
+}
+.sidebarclose {
+    text-align: center;
+    display: none;
+   
+}
+.sidebar .patients{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+}
+.sidebar .patients h2{
+    font-size: 14px;
+    color: #072635;
+}
+.sidebar .patients img{
+    width: 14px;
+    color: #072635;
+}
+.sidebar .patient{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.sidebar .patient .patient-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+.sidebar .patient .patient-profile img{
+    width: 30px;
+}
+
+
+.sidebar .patient .patient-profile h3{
+    font-size: 11px;
+    color: #072635;
+  
+}
+.patient .patient-profile  .details {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.patient .patient-profile  .details  small{
+    font-weight: 400;
+    color: #707070;
+    font-size: 11px;
+    
+   
+}
+
+
+
+
+
+main{
+    background-color:#F6F7F8;
+    border-radius: 12px;
+    padding:15px 10px;
+}
+
+
+main h2{
+    font-size: 13px;
+    color: #072635;
+    margin-bottom: 10px;
+}
+.box{
+    background-color: #F4F0FE;
+    border-radius: 12px;
+    padding: 15px 18px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.box-chart{
+   width: 100%;
+}
+.box-info{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.box-info h3{
+    font-size: 11px;
+    color: #072635;
+}
+
+.box-info span{
+    font-size: 10px;
+    color: #072635;
+}
+.chart-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 4px;
+}
+.box .color{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #E66FD2;
+}
+
+.blood-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blood-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10pxs;
+}
+.blood-info img{
+    width: 10px;
+}
+.blood-info small{
+    font-size: 11px;
+   
+    white-space: nowrap;
+}
+hr{
+    margin-top: 10px;
+}
+.color-2{
+    background-color:#8C6FE6 ;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.heart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 10px;
+    transition: all ease 0.30ms;
+}
+
+.respiratory{
+    background-color: #E0F3FA;
+    padding: 10px;
+
+    border-radius: 12px;
+}
+.heart img{
+    width: 60px;
+}
+.temperature{
+    background-color: #FFE6E9;
+    padding: 10px;
+    border-radius: 12px;
+}
+.heart-rate{
+    background-color: #FFE6E9;
+    padding: 10px;
+    border-radius: 12px;
+
+}
+/*heart */
+
+.diagnosis{
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #f4f4f4;
+    background-color: 28px;
+    margin: 4px;
+}
+
+thead th {
+    padding: 12px 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    padding: 12px 15px;
+}
+
+tbody td:first-child {
+    font-weight: 500;
+    color: #333;
+}
+
+
+.right-side{
+    
+    margin-right: 18px;
+
+}
+.aside-profile{
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+
+}
+.right-side .profile-user{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    
+}
+.right-side .profile-user img{
+    width: 90px;
+}
+.right-side .profile-user h2{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.profile-user-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.profile-user-info .user-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.profile-user-info img{
+    width: 28px;
+}
+.user-details{
+    margin: 0;
+    padding: 0;
+}
+.user-details p{
+    font-size: 10px;
+    margin: 0;
+    color: #072635;
+}
+.user-details h6{
+    font-size: 11px;
+    color: #072635;
+}
+.profile-user-info .image-calender{
+    width: 11px;
+}
+.right-side .button{
+    background-color: #01F0D0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px 18px;
+    border-radius: 20px;
+
+}
+.right-side .button button{
+    border: s;
+    background: transparent;
+    color: #072635;
+    cursor: pointer;
+    border: none;
+
+}
+.lab-results{
+    margin-top: 20px;
+    padding:10px;
+    border-radius: 12px;
+    background-color: white;
+}
+.lab-results h2{
+    font-size: 15px;
+    color: #072635;
+    border-radius: 12px;
+}
+.lab-result{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+.lab-result p{
+    font-size: 12px;
+    color: #072635;
+
+}
+.lab-result img{
+    width: 12px;
+}
+
+@media (max-width:1024px) {
+    body {
+        background-color:#F6F7F8;
+        font-family: 'Poppins', sans-serif;
+        background-color: #eee;
+        margin: 0;
+        padding: 0;
+    }
+    .filter{
+        display: block;
+
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar{
+        position: fixed;
+        top: 1;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 250px;
+        
+
+    }
+    .sidebarclose{
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    main{
+        width: 90%;
+    }
+    
+}
+@media (max-width: 768px){
+    body {
+        background-color:#F6F7F8;
+        font-family: 'Poppins', sans-serif;
+        background-color: #eee;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .container{
+        width:100%;
+    }
+    main{
+        width: 98%;
+        margin-right: 10px;
+    }
+
+.right-side{
+        width: 90%;
+
+    }
 }
